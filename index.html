@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ehansa 💗</title>
+
+<style>
+:root {
+  --pink: #ffd6e5;
+  --cream: #fff9f0;
+  --purple: #7964a9;
+  --ink: #42365f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--cream);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 20px;
+  background:
+    radial-gradient(circle at 15% 20%, #fff 0 3px, transparent 4px),
+    linear-gradient(135deg, #ffe0ec, #fff8e9, #e7e0ff);
+}
+
+.tag {
+  background: white;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(45px, 10vw, 82px);
+  margin: 25px 0 10px;
+  color: #b85c88;
+}
+
+.hero p {
+  max-width: 550px;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+button {
+  border: none;
+  background: var(--purple);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 5px 15px #7964a933;
+}
+
+button:hover { transform: translateY(-2px); }
+
+section { padding: 65px 20px; }
+
+h2 {
+  font-size: clamp(28px, 6vw, 42px);
+  color: #a65783;
+}
+
+.message {
+  max-width: 720px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+.timeline {
+  max-width: 650px;
+  margin: 35px auto;
+  text-align: left;
+}
+
+.memory {
+  background: white;
+  padding: 20px;
+  margin: 18px 0;
+  border-left: 5px solid #e6a6c4;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #5a42600c;
+}
+
+.memory h3 { margin-top: 0; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1050px;
+  margin: 35px auto;
+}
+
+.photo {
+  background: white;
+  padding: 10px 10px 18px;
+  border-radius: 5px;
+  box-shadow: 0 6px 18px #42365f18;
+  transform: rotate(-1deg);
+  transition: transform .25s;
+}
+
+.photo:nth-child(even) { transform: rotate(1.5deg); }
+.photo:hover { transform: rotate(0) scale(1.03); }
+
+.photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #f5e7ed;
+  border-radius: 3px;
+}
+
+.photo p {
+  font-size: 15px;
+  margin: 13px 2px 0;
+}
+
+.chess {
+  background: linear-gradient(135deg, #eee8ff, #ffe8f0);
+}
+
+footer {
+  padding: 35px 20px;
+  background: #42365f;
+  color: white;
+  line-height: 1.8;
+}
+
+#surprise {
+  display: none;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: floatUp 5s linear forwards;
+  z-index: 10;
+}
+
+@keyframes floatUp {
+  to { transform: translateY(-110vh) rotate(35deg); opacity: 0; }
+}
+
+@media (max-width: 650px) {
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+  .photo p { font-size: 13px; }
+  section { padding: 48px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="tag">✦ FRIENDS 4EVER ✦</div>
+  <h1>Happy Birthday<br>Ehansa! 💗</h1>
+
+  <p>
+    To my childhood bestie, my chess partner,
+    my school friend and my forever person.
+    Different countries, but always the same friendship. ♟️
+  </p>
+  <div class="message">
+    Some friendships begin with a simple hello and become
+    one of the most beautiful parts of our lives.
+    Ours began back in 2012, and look how far we've come! 🥹
+
+    <br><br>
+
+    From going to the same school to sharing so many memories,
+    from chess games to silly conversations, we've grown up
+    through so many different chapters together.
+
+    <br><br>
+
+    Now you're in Australia and I'm here, and I wish we could
+    celebrate your birthday together. But no distance, time zone
+    or thousands of kilometres can change what our friendship
+    means to me.
+  </div>
+
+  <button onclick="showSurprise()">Open Your Birthday Surprise 🎁</button>
+</header>
+
+<section style="background:#fff0f5">
+  <h2>Our Little Memory Gallery 📸</h2>
+  <p>Million memories, One forever friendship.</p>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="photo1.jpg" alt="Our first memory"
+           onerror="this.style.display='none'">
+      <p>♡ Where it all began</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo2.jpg" alt="Our school memories"
+           onerror="this.style.display='none'">
+      <p>♡ Friends forever</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo3.jpg" alt="A fun memory together"
+           onerror="this.style.display='none'">
+      <p>♡ Chess buddies for life</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo4.jpg" alt="Chess memories"
+           onerror="this.style.display='none'">
+      <p>♡ Our crazy moments ♟️</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo5.jpg" alt="A favourite photo"
+           onerror="this.style.display='none'">
+      <p>♡ My favourite human</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo6.jpg" alt="A special memory"
+           onerror="this.style.display='none'">
+      <p>♡ Memories I'll never forget</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo7.jpg" alt="Our friendship"
+           onerror="this.style.display='none'">
+      <p>♡ Then, now and always</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo8.jpg" alt="Another happy memory"
+           onerror="this.style.display='none'">
+      <p>♡ Different places, same hearts</p>
+    </div>
+
+    <div class="photo">
+      <img src="photo9.jpg" alt="Our forever friendship"
+           onerror="this.style.display='none'">
+      <p>♡ To a lifetime of memories</p>
+    </div>
+
+    <div class="photo">
+        <img src="photo10.jpg" alt="Another beautiful memory"
+             onerror="this.style.display='none'">
+        <p>♡ A friendship full of memories 💕</p>
+      </div>
+  
+      <div class="photo">
+        <img src="photo11.jpg" alt="Our unbreakable bond"
+             onerror="this.style.display='none'">
+        <p>♡ Miles apart, close at heart 💌</p>
+      </div>
+  
+      <div class="photo">
+        <img src="photo12.jpg" alt="Birthday girl Ehansa"
+             onerror="this.style.display='none'">
+        <p>♡ Memories Together💗</p>
+      </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>A Little Birthday Surprise 💌</h2>
+
+  <button onclick="showSurprise()">Tap here, birthday girl! 💝</button>
+
+  <div id="surprise">
+    <h2>To My Ehansa ❤️</h2>
+
+    Happy Birthday, bestie!
+
+    <br><br>
+
+    Thank you for being part of my life.
+    Thank you for all the laughs, school memories,
+    chess games, conversations and moments that made
+    growing up so special.
+
+    <br><br>
+
+    I wish I could be there to hug you, celebrate with you
+    and make more memories together today.
+
+    <br><br>
+
+    Even though Australia is far away, you'll never be
+    far from my heart. I hope this new chapter brings
+    you endless happiness, good health, success and
+    everything you've been dreaming of.
+
+    <br><br>
+
+    Years may pass, places may change, and life may get busy,
+    but I hope we will always find our way back to each other.
+
+    <br><br>
+
+    From your childhood friend to your forever chess buddy,
+    I'm so lucky to have you.    
+
+    <br><br>
+    <strong>Love you always, Ehansa! 🥹💗♟️ ♾️</strong>
+  </div>
+</section>
+
+<footer>
+  Made with so much love for Ehansa 💗
+  <br>
+  Since 2012 - and counting... ♾️
+  <br>
+  Sri Lanka 🇱🇰  Australia 🇦🇺
+</footer>
+
+<script>
+function showSurprise() {
+  const surprise = document.getElementById("surprise");
+  surprise.style.display = "block";
+  surprise.scrollIntoView({ behavior: "smooth", block: "center" });
+
+  for (let i = 0; i < 30; i++) {
+    setTimeout(createHeart, i * 100);
+  }
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.textContent = ["💗", "💖", "💕", "✨", "💜"][
+    Math.floor(Math.random() * 5)
+  ];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (16 + Math.random() * 22) + "px";
+  heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 6500);
+}
+</script>
+
+</body>
+</html>
